@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB52CC021C89062100568B6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CC011C89062100568B6C /* main.m */; };
+		EB52CC051C89062100568B6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CC041C89062100568B6C /* AppDelegate.m */; };
+		EB52CC081C89062100568B6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CC071C89062100568B6C /* ViewController.m */; };
+		EB52CC0B1C89062100568B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB52CC091C89062100568B6C /* Main.storyboard */; };
+		EB52CC0D1C89062100568B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB52CC0C1C89062100568B6C /* Assets.xcassets */; };
+		EB52CC101C89062100568B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB52CC0E1C89062100568B6C /* LaunchScreen.storyboard */; };
+		EB52CC1B1C89062100568B6C /* AzurionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CC1A1C89062100568B6C /* AzurionTests.m */; };
+		EB52CC261C89062100568B6C /* AzurionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CC251C89062100568B6C /* AzurionUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB52CC171C89062100568B6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB52CBF51C89062100568B6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB52CBFC1C89062100568B6C;
+			remoteInfo = Azurion;
+		};
+		EB52CC221C89062100568B6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB52CBF51C89062100568B6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB52CBFC1C89062100568B6C;
+			remoteInfo = Azurion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB52CBFD1C89062100568B6C /* Azurion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azurion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB52CC011C89062100568B6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB52CC031C89062100568B6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB52CC041C89062100568B6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB52CC061C89062100568B6C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EB52CC071C89062100568B6C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EB52CC0A1C89062100568B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB52CC0C1C89062100568B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB52CC0F1C89062100568B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB52CC111C89062100568B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB52CC161C89062100568B6C /* AzurionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzurionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB52CC1A1C89062100568B6C /* AzurionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzurionTests.m; sourceTree = "<group>"; };
+		EB52CC1C1C89062100568B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB52CC211C89062100568B6C /* AzurionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzurionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB52CC251C89062100568B6C /* AzurionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzurionUITests.m; sourceTree = "<group>"; };
+		EB52CC271C89062100568B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB52CBFA1C89062100568B6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB52CC131C89062100568B6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB52CC1E1C89062100568B6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB52CBF41C89062100568B6C = {
+			isa = PBXGroup;
+			children = (
+				EB52CBFF1C89062100568B6C /* Azurion */,
+				EB52CC191C89062100568B6C /* AzurionTests */,
+				EB52CC241C89062100568B6C /* AzurionUITests */,
+				EB52CBFE1C89062100568B6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB52CBFE1C89062100568B6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB52CBFD1C89062100568B6C /* Azurion.app */,
+				EB52CC161C89062100568B6C /* AzurionTests.xctest */,
+				EB52CC211C89062100568B6C /* AzurionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB52CBFF1C89062100568B6C /* Azurion */ = {
+			isa = PBXGroup;
+			children = (
+				EB52CC031C89062100568B6C /* AppDelegate.h */,
+				EB52CC041C89062100568B6C /* AppDelegate.m */,
+				EB52CC061C89062100568B6C /* ViewController.h */,
+				EB52CC071C89062100568B6C /* ViewController.m */,
+				EB52CC091C89062100568B6C /* Main.storyboard */,
+				EB52CC0C1C89062100568B6C /* Assets.xcassets */,
+				EB52CC0E1C89062100568B6C /* LaunchScreen.storyboard */,
+				EB52CC111C89062100568B6C /* Info.plist */,
+				EB52CC001C89062100568B6C /* Supporting Files */,
+			);
+			path = Azurion;
+			sourceTree = "<group>";
+		};
+		EB52CC001C89062100568B6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB52CC011C89062100568B6C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB52CC191C89062100568B6C /* AzurionTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB52CC1A1C89062100568B6C /* AzurionTests.m */,
+				EB52CC1C1C89062100568B6C /* Info.plist */,
+			);
+			path = AzurionTests;
+			sourceTree = "<group>";
+		};
+		EB52CC241C89062100568B6C /* AzurionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB52CC251C89062100568B6C /* AzurionUITests.m */,
+				EB52CC271C89062100568B6C /* Info.plist */,
+			);
+			path = AzurionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB52CBFC1C89062100568B6C /* Azurion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB52CC2A1C89062100568B6C /* Build configuration list for PBXNativeTarget "Azurion" */;
+			buildPhases = (
+				EB52CBF91C89062100568B6C /* Sources */,
+				EB52CBFA1C89062100568B6C /* Frameworks */,
+				EB52CBFB1C89062100568B6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Azurion;
+			productName = Azurion;
+			productReference = EB52CBFD1C89062100568B6C /* Azurion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB52CC151C89062100568B6C /* AzurionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB52CC2D1C89062100568B6C /* Build configuration list for PBXNativeTarget "AzurionTests" */;
+			buildPhases = (
+				EB52CC121C89062100568B6C /* Sources */,
+				EB52CC131C89062100568B6C /* Frameworks */,
+				EB52CC141C89062100568B6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB52CC181C89062100568B6C /* PBXTargetDependency */,
+			);
+			name = AzurionTests;
+			productName = AzurionTests;
+			productReference = EB52CC161C89062100568B6C /* AzurionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB52CC201C89062100568B6C /* AzurionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB52CC301C89062100568B6C /* Build configuration list for PBXNativeTarget "AzurionUITests" */;
+			buildPhases = (
+				EB52CC1D1C89062100568B6C /* Sources */,
+				EB52CC1E1C89062100568B6C /* Frameworks */,
+				EB52CC1F1C89062100568B6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB52CC231C89062100568B6C /* PBXTargetDependency */,
+			);
+			name = AzurionUITests;
+			productName = AzurionUITests;
+			productReference = EB52CC211C89062100568B6C /* AzurionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB52CBF51C89062100568B6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Clement;
+				TargetAttributes = {
+					EB52CBFC1C89062100568B6C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					EB52CC151C89062100568B6C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EB52CBFC1C89062100568B6C;
+					};
+					EB52CC201C89062100568B6C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EB52CBFC1C89062100568B6C;
+					};
+				};
+			};
+			buildConfigurationList = EB52CBF81C89062100568B6C /* Build configuration list for PBXProject "Azurion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB52CBF41C89062100568B6C;
+			productRefGroup = EB52CBFE1C89062100568B6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB52CBFC1C89062100568B6C /* Azurion */,
+				EB52CC151C89062100568B6C /* AzurionTests */,
+				EB52CC201C89062100568B6C /* AzurionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB52CBFB1C89062100568B6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB52CC101C89062100568B6C /* LaunchScreen.storyboard in Resources */,
+				EB52CC0D1C89062100568B6C /* Assets.xcassets in Resources */,
+				EB52CC0B1C89062100568B6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB52CC141C89062100568B6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB52CC1F1C89062100568B6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB52CBF91C89062100568B6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB52CC081C89062100568B6C /* ViewController.m in Sources */,
+				EB52CC051C89062100568B6C /* AppDelegate.m in Sources */,
+				EB52CC021C89062100568B6C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB52CC121C89062100568B6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB52CC1B1C89062100568B6C /* AzurionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB52CC1D1C89062100568B6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB52CC261C89062100568B6C /* AzurionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB52CC181C89062100568B6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB52CBFC1C89062100568B6C /* Azurion */;
+			targetProxy = EB52CC171C89062100568B6C /* PBXContainerItemProxy */;
+		};
+		EB52CC231C89062100568B6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB52CBFC1C89062100568B6C /* Azurion */;
+			targetProxy = EB52CC221C89062100568B6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB52CC091C89062100568B6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB52CC0A1C89062100568B6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB52CC0E1C89062100568B6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB52CC0F1C89062100568B6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB52CC281C89062100568B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB52CC291C89062100568B6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB52CC2B1C89062100568B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Azurion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ClementHardelay.Azurion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB52CC2C1C89062100568B6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Azurion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ClementHardelay.Azurion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EB52CC2E1C89062100568B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AzurionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ClementHardelay.AzurionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Azurion.app/Azurion";
+			};
+			name = Debug;
+		};
+		EB52CC2F1C89062100568B6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AzurionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ClementHardelay.AzurionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Azurion.app/Azurion";
+			};
+			name = Release;
+		};
+		EB52CC311C89062100568B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AzurionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ClementHardelay.AzurionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Azurion;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EB52CC321C89062100568B6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AzurionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ClementHardelay.AzurionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Azurion;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB52CBF81C89062100568B6C /* Build configuration list for PBXProject "Azurion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB52CC281C89062100568B6C /* Debug */,
+				EB52CC291C89062100568B6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB52CC2A1C89062100568B6C /* Build configuration list for PBXNativeTarget "Azurion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB52CC2B1C89062100568B6C /* Debug */,
+				EB52CC2C1C89062100568B6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB52CC2D1C89062100568B6C /* Build configuration list for PBXNativeTarget "AzurionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB52CC2E1C89062100568B6C /* Debug */,
+				EB52CC2F1C89062100568B6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB52CC301C89062100568B6C /* Build configuration list for PBXNativeTarget "AzurionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB52CC311C89062100568B6C /* Debug */,
+				EB52CC321C89062100568B6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB52CBF51C89062100568B6C /* Project object */;
+}
