@@ -15,6 +15,18 @@
 		EB52CC101C89062100568B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB52CC0E1C89062100568B6C /* LaunchScreen.storyboard */; };
 		EB52CC1B1C89062100568B6C /* AzurionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CC1A1C89062100568B6C /* AzurionTests.m */; };
 		EB52CC261C89062100568B6C /* AzurionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CC251C89062100568B6C /* AzurionUITests.m */; };
+		EB52CCD51C890B4F00568B6C /* Pomelo.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CCD21C890B4F00568B6C /* Pomelo.m */; };
+		EB52CCD61C890B4F00568B6C /* PomeloProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CCD41C890B4F00568B6C /* PomeloProtocol.m */; };
+		EB52CD011C890D6900568B6C /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CD001C890D6900568B6C /* SocketIO.m */; };
+		EB52CD071C890D8C00568B6C /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CD041C890D8C00568B6C /* SocketIOTransportWebsocket.m */; };
+		EB52CD081C890D8C00568B6C /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CD061C890D8C00568B6C /* SocketIOTransportXHR.m */; };
+		EB52CD0D1C890DA900568B6C /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CD0A1C890DA900568B6C /* SocketIOJSONSerialization.m */; };
+		EB52CD0E1C890DA900568B6C /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CD0C1C890DA900568B6C /* SocketIOPacket.m */; };
+		EB52CD121C890E1900568B6C /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52CD111C890E1900568B6C /* SRWebSocket.m */; };
+		EB52CD141C890E9200568B6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB52CD131C890E9200568B6C /* Foundation.framework */; };
+		EB52CD161C890EA000568B6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB52CD151C890EA000568B6C /* Security.framework */; };
+		EB52CD181C890EAA00568B6C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB52CD171C890EAA00568B6C /* CFNetwork.framework */; };
+		EB52CD1A1C890EC600568B6C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB52CD191C890EC600568B6C /* libicucore.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,28 @@
 		EB52CC211C89062100568B6C /* AzurionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzurionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB52CC251C89062100568B6C /* AzurionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzurionUITests.m; sourceTree = "<group>"; };
 		EB52CC271C89062100568B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB52CCD11C890B4F00568B6C /* Pomelo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pomelo.h; path = "../../../../Downloads/pomelo-iosclient-master/Pomelo.h"; sourceTree = "<group>"; };
+		EB52CCD21C890B4F00568B6C /* Pomelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pomelo.m; path = "../../../../Downloads/pomelo-iosclient-master/Pomelo.m"; sourceTree = "<group>"; };
+		EB52CCD31C890B4F00568B6C /* PomeloProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PomeloProtocol.h; path = "../../../../Downloads/pomelo-iosclient-master/PomeloProtocol.h"; sourceTree = "<group>"; };
+		EB52CCD41C890B4F00568B6C /* PomeloProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PomeloProtocol.m; path = "../../../../Downloads/pomelo-iosclient-master/PomeloProtocol.m"; sourceTree = "<group>"; };
+		EB52CCFF1C890D6900568B6C /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIO.h; path = Azurion/SocketIO.h; sourceTree = "<group>"; };
+		EB52CD001C890D6900568B6C /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIO.m; path = Azurion/SocketIO.m; sourceTree = "<group>"; };
+		EB52CD021C890D8C00568B6C /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransport.h; path = Azurion/SocketIOTransport.h; sourceTree = "<group>"; };
+		EB52CD031C890D8C00568B6C /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportWebsocket.h; path = Azurion/SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		EB52CD041C890D8C00568B6C /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportWebsocket.m; path = Azurion/SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		EB52CD051C890D8C00568B6C /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportXHR.h; path = Azurion/SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		EB52CD061C890D8C00568B6C /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportXHR.m; path = Azurion/SocketIOTransportXHR.m; sourceTree = "<group>"; };
+		EB52CD091C890DA900568B6C /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOJSONSerialization.h; path = Azurion/SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		EB52CD0A1C890DA900568B6C /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOJSONSerialization.m; path = Azurion/SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		EB52CD0B1C890DA900568B6C /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOPacket.h; path = Azurion/SocketIOPacket.h; sourceTree = "<group>"; };
+		EB52CD0C1C890DA900568B6C /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOPacket.m; path = Azurion/SocketIOPacket.m; sourceTree = "<group>"; };
+		EB52CD0F1C890E1900568B6C /* SocketRocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketRocket.h; path = Azurion/SocketRocket.h; sourceTree = "<group>"; };
+		EB52CD101C890E1900568B6C /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = Azurion/SRWebSocket.h; sourceTree = "<group>"; };
+		EB52CD111C890E1900568B6C /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = Azurion/SRWebSocket.m; sourceTree = "<group>"; };
+		EB52CD131C890E9200568B6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB52CD151C890EA000568B6C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EB52CD171C890EAA00568B6C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EB52CD191C890EC600568B6C /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB52CD1A1C890EC600568B6C /* libicucore.tbd in Frameworks */,
+				EB52CD181C890EAA00568B6C /* CFNetwork.framework in Frameworks */,
+				EB52CD161C890EA000568B6C /* Security.framework in Frameworks */,
+				EB52CD141C890E9200568B6C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +119,7 @@
 		EB52CBF41C89062100568B6C = {
 			isa = PBXGroup;
 			children = (
+				EB52CD1B1C890EEA00568B6C /* pomelo need */,
 				EB52CBFF1C89062100568B6C /* Azurion */,
 				EB52CC191C89062100568B6C /* AzurionTests */,
 				EB52CC241C89062100568B6C /* AzurionUITests */,
@@ -138,6 +177,35 @@
 				EB52CC271C89062100568B6C /* Info.plist */,
 			);
 			path = AzurionUITests;
+			sourceTree = "<group>";
+		};
+		EB52CD1B1C890EEA00568B6C /* pomelo need */ = {
+			isa = PBXGroup;
+			children = (
+				EB52CD191C890EC600568B6C /* libicucore.tbd */,
+				EB52CD171C890EAA00568B6C /* CFNetwork.framework */,
+				EB52CD151C890EA000568B6C /* Security.framework */,
+				EB52CD131C890E9200568B6C /* Foundation.framework */,
+				EB52CCD11C890B4F00568B6C /* Pomelo.h */,
+				EB52CD0F1C890E1900568B6C /* SocketRocket.h */,
+				EB52CD101C890E1900568B6C /* SRWebSocket.h */,
+				EB52CD111C890E1900568B6C /* SRWebSocket.m */,
+				EB52CD091C890DA900568B6C /* SocketIOJSONSerialization.h */,
+				EB52CD0A1C890DA900568B6C /* SocketIOJSONSerialization.m */,
+				EB52CD0B1C890DA900568B6C /* SocketIOPacket.h */,
+				EB52CD0C1C890DA900568B6C /* SocketIOPacket.m */,
+				EB52CD021C890D8C00568B6C /* SocketIOTransport.h */,
+				EB52CD031C890D8C00568B6C /* SocketIOTransportWebsocket.h */,
+				EB52CD041C890D8C00568B6C /* SocketIOTransportWebsocket.m */,
+				EB52CD051C890D8C00568B6C /* SocketIOTransportXHR.h */,
+				EB52CD061C890D8C00568B6C /* SocketIOTransportXHR.m */,
+				EB52CCFF1C890D6900568B6C /* SocketIO.h */,
+				EB52CD001C890D6900568B6C /* SocketIO.m */,
+				EB52CCD21C890B4F00568B6C /* Pomelo.m */,
+				EB52CCD31C890B4F00568B6C /* PomeloProtocol.h */,
+				EB52CCD41C890B4F00568B6C /* PomeloProtocol.m */,
+			);
+			name = "pomelo need";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +338,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB52CD011C890D6900568B6C /* SocketIO.m in Sources */,
+				EB52CD081C890D8C00568B6C /* SocketIOTransportXHR.m in Sources */,
+				EB52CD0E1C890DA900568B6C /* SocketIOPacket.m in Sources */,
+				EB52CD071C890D8C00568B6C /* SocketIOTransportWebsocket.m in Sources */,
 				EB52CC081C89062100568B6C /* ViewController.m in Sources */,
+				EB52CD121C890E1900568B6C /* SRWebSocket.m in Sources */,
+				EB52CCD61C890B4F00568B6C /* PomeloProtocol.m in Sources */,
 				EB52CC051C89062100568B6C /* AppDelegate.m in Sources */,
 				EB52CC021C89062100568B6C /* main.m in Sources */,
+				EB52CCD51C890B4F00568B6C /* Pomelo.m in Sources */,
+				EB52CD0D1C890DA900568B6C /* SocketIOJSONSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
