@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import "ContactsViewController.h"
-#import "ChatViewControllerX.h"
+#import "Menu.h"
 
 @interface LoginViewController ()
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;
@@ -36,7 +36,7 @@
     NSString *name = @"iosTEST";
     NSString *channel = @"chat";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ChatViewControllerX *root = [[ChatViewControllerX alloc] initWithNibName:@"ChatViewControllerX" bundle:nil];
+    ChatViewControllerX *root = [[ChatViewControllerX alloc] initWithNibName:@"Menu" bundle:nil];
     self.navController = [[UINavigationController alloc] initWithRootViewController:root];
     [self.window addSubview:navController.view];
     

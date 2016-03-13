@@ -6,7 +6,7 @@
 //  Copyright (c) 2012年 netease pomelo team. All rights reserved.
 //
 
-#import "ChatViewControllerX.h"
+#import "Menu.h"
 #import "EFAnimationViewController.h"
 
 @interface ChatViewControllerX ()
