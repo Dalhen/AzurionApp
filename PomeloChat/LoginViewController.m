@@ -8,20 +8,19 @@
 
 #import "LoginViewController.h"
 #import "ContactsViewController.h"
+#import "ChatViewControllerX.h"
 
 @interface LoginViewController ()
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;
-
-@property (strong, nonatomic) ContactsViewController *contactsViewController;
 
 - (void)entryWithData:(NSDictionary *)data;
 
 @end
 
 @implementation LoginViewController
-
-@synthesize contactsViewController;
 @synthesize pomelo;
+@synthesize window;
+@synthesize navController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,18 +35,26 @@
 {
     NSString *name = @"iosTEST";
     NSString *channel = @"chat";
- 
-    if (([name length] > 0) && ([channel length] > 0)) {
-        [self.activityIndicatorView startAnimating];
-        [pomelo connectToHost:@"51.254.135.101" onPort:3010 withCallback:^(Pomelo *p){
-            NSDictionary *params = [NSDictionary dictionaryWithObject:name forKey:@"uid"];
-            [pomelo requestWithRoute:@"gate.gateHandler.queryEntry" andParams:params andCallback:^(NSDictionary *result){
-                [pomelo disconnectWithCallback:^(Pomelo *p){
-                    [self entryWithData:result];
-                }];
-            }];
-        }];
-    }
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ChatViewControllerX *root = [[ChatViewControllerX alloc] initWithNibName:@"ChatViewControllerX" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:root];
+    [self.window addSubview:navController.view];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = root;
+
+    //    if (([name length] > 0) && ([channel length] > 0)) {
+//        [self.activityIndicatorView startAnimating];
+//        [pomelo connectToHost:@"51.254.135.101" onPort:3010 withCallback:^(Pomelo *p){
+//            NSDictionary *params = [NSDictionary dictionaryWithObject:name forKey:@"uid"];
+//            [pomelo requestWithRoute:@"gate.gateHandler.queryEntry" andParams:params andCallback:^(NSDictionary *result){
+//                [pomelo disconnectWithCallback:^(Pomelo *p){
+//                    [self entryWithData:result];
+//                }];
+//            }];
+//        }];
+//    }
     //[self.navigationController pushViewController:self.contactsViewController animated:YES];
 }
 
@@ -66,10 +73,10 @@
                                 nil];
         [p requestWithRoute:@"connector.entryHandler.enter" andParams:params andCallback:^(NSDictionary *result){
             NSArray *userList = [result objectForKey:@"users"];
-            [self.contactsViewController.contactList addObjectsFromArray:userList];
-            [self.contactsViewController.contactList removeObject:name];
-            [self.activityIndicatorView stopAnimating];
-            [self.navigationController pushViewController:self.contactsViewController animated:YES];
+//            [self.contactsViewController.contactList addObjectsFromArray:userList];
+//            [self.contactsViewController.contactList removeObject:name];
+//            [self.activityIndicatorView stopAnimating];
+//            [self.navigationController pushViewController:self.contactsViewController animated:YES];
         }];
     }];
 }
@@ -91,8 +98,8 @@
     [self.view addSubview:self.activityIndicatorView];
     
     self.title = @"Login";
-    self.contactsViewController = [[ContactsViewController alloc] initWithStyle:UITableViewStylePlain];
-    contactsViewController.pomelo = pomelo;
+//    self.contactsViewController = [[ContactsViewController alloc] initWithStyle:UITableViewStylePlain];
+//    contactsViewController.pomelo = pomelo;
 }
 
 - (void)didReceiveMemoryWarning

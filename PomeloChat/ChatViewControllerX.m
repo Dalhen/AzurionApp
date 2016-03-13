@@ -6,17 +6,17 @@
 //  Copyright (c) 2012年 netease pomelo team. All rights reserved.
 //
 
-#import "ChatViewController.h"
+#import "ChatViewControllerX.h"
 #import "EFAnimationViewController.h"
 
-@interface ChatViewController ()
+@interface ChatViewControllerX ()
 @property (strong, nonatomic) NSMutableString *chatStr;
 @property (nonatomic, strong) EFAnimationViewController *viewController;
 
 - (void)initEvents;
 @end
 
-@implementation ChatViewController
+@implementation ChatViewControllerX
 
 @synthesize inputTextField;
 @synthesize chatTextField;

@@ -37,6 +37,10 @@
 		EB5C87D71C94F68600C80D20 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5C87D61C94F68600C80D20 /* Media.xcassets */; };
 		EB5C87DB1C94FD7700C80D20 /* logo_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5C87DA1C94FD7700C80D20 /* logo_transparent.png */; };
 		EB5C87DD1C9504E800C80D20 /* back1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5C87DC1C9504E800C80D20 /* back1.png */; };
+		EB8687FF1C9562710074DA58 /* EFAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8687FE1C9562710074DA58 /* EFAnimationViewController.m */; };
+		EB8688031C9565F30074DA58 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8688021C9565F30074DA58 /* QuartzCore.framework */; };
+		EB92F7511C95870C005653A9 /* ChatViewControllerX.m in Sources */ = {isa = PBXBuildFile; fileRef = EB92F74F1C95870C005653A9 /* ChatViewControllerX.m */; };
+		EB92F7521C95870C005653A9 /* ChatViewControllerX.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB92F7501C95870C005653A9 /* ChatViewControllerX.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +93,12 @@
 		EB5C87D61C94F68600C80D20 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		EB5C87DA1C94FD7700C80D20 /* logo_transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_transparent.png; path = ../../../Downloads/logo_transparent.png; sourceTree = "<group>"; };
 		EB5C87DC1C9504E800C80D20 /* back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back1.png; path = ../../../Downloads/back1.png; sourceTree = "<group>"; };
+		EB8687FD1C9562710074DA58 /* EFAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFAnimationViewController.h; path = ../../../Downloads/EFAnimationMenu/EFAnimationMenu/EFAnimationViewController.h; sourceTree = "<group>"; };
+		EB8687FE1C9562710074DA58 /* EFAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFAnimationViewController.m; path = ../../../Downloads/EFAnimationMenu/EFAnimationMenu/EFAnimationViewController.m; sourceTree = "<group>"; };
+		EB8688021C9565F30074DA58 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EB92F74E1C95870C005653A9 /* ChatViewControllerX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewControllerX.h; sourceTree = "<group>"; };
+		EB92F74F1C95870C005653A9 /* ChatViewControllerX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewControllerX.m; sourceTree = "<group>"; };
+		EB92F7501C95870C005653A9 /* ChatViewControllerX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewControllerX.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8688031C9565F30074DA58 /* QuartzCore.framework in Frameworks */,
 				B20B25C216774608005F5A82 /* Security.framework in Frameworks */,
 				B20B25C016774600005F5A82 /* CFNetwork.framework in Frameworks */,
 				B20B25BE167745F0005F5A82 /* libicucore.dylib in Frameworks */,
@@ -128,6 +139,7 @@
 		B20B256B16773678005F5A82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB8688021C9565F30074DA58 /* QuartzCore.framework */,
 				B20B25C116774607005F5A82 /* Security.framework */,
 				B20B25BF16774600005F5A82 /* CFNetwork.framework */,
 				B20B25BD167745F0005F5A82 /* libicucore.dylib */,
@@ -149,6 +161,11 @@
 				B20B257316773678005F5A82 /* Supporting Files */,
 				B280B8BA168C4806002B48AF /* LoginViewController.h */,
 				B280B8BB168C4806002B48AF /* LoginViewController.m */,
+				EB92F74E1C95870C005653A9 /* ChatViewControllerX.h */,
+				EB92F74F1C95870C005653A9 /* ChatViewControllerX.m */,
+				EB92F7501C95870C005653A9 /* ChatViewControllerX.xib */,
+				EB8687FD1C9562710074DA58 /* EFAnimationViewController.h */,
+				EB8687FE1C9562710074DA58 /* EFAnimationViewController.m */,
 				B280B8BC168C4806002B48AF /* LoginViewController.xib */,
 				B280B8BF168C506B002B48AF /* ContactsViewController.h */,
 				B280B8C0168C506B002B48AF /* ContactsViewController.m */,
@@ -275,6 +292,7 @@
 				B20B257F16773678005F5A82 /* Default.png in Resources */,
 				EB5C87D71C94F68600C80D20 /* Media.xcassets in Resources */,
 				B20B258116773678005F5A82 /* Default@2x.png in Resources */,
+				EB92F7521C95870C005653A9 /* ChatViewControllerX.xib in Resources */,
 				B20B258316773678005F5A82 /* Default-568h@2x.png in Resources */,
 				B280B8BE168C4806002B48AF /* LoginViewController.xib in Resources */,
 				EB5C87DB1C94FD7700C80D20 /* logo_transparent.png in Resources */,
@@ -289,9 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8687FF1C9562710074DA58 /* EFAnimationViewController.m in Sources */,
 				B245D833168E876400879092 /* Pomelo.m in Sources */,
 				B245D835168E876400879092 /* PomeloProtocol.m in Sources */,
 				B26482EA16898055006D39A1 /* SocketIO.m in Sources */,
+				EB92F7511C95870C005653A9 /* ChatViewControllerX.m in Sources */,
 				B26482EC16898055006D39A1 /* SocketIOJSONSerialization.m in Sources */,
 				B26482EE16898055006D39A1 /* SocketIOPacket.m in Sources */,
 				B26482F116898055006D39A1 /* SocketIOTransportWebsocket.m in Sources */,
