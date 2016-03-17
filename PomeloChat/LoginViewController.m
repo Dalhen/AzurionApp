@@ -35,6 +35,8 @@
 {
     NSString *name = @"iosTEST";
     NSString *channel = @"chat";
+    NSString *host = @"51.254.135.101";
+    NSString *port = @"3010";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     ChatViewControllerX *root = [[ChatViewControllerX alloc] initWithNibName:@"Menu" bundle:nil];
     self.navController = [[UINavigationController alloc] initWithRootViewController:root];
@@ -44,17 +46,30 @@
     [self.window makeKeyAndVisible];
     self.window.rootViewController = root;
 
-    //    if (([name length] > 0) && ([channel length] > 0)) {
-//        [self.activityIndicatorView startAnimating];
-//        [pomelo connectToHost:@"51.254.135.101" onPort:3010 withCallback:^(Pomelo *p){
-//            NSDictionary *params = [NSDictionary dictionaryWithObject:name forKey:@"uid"];
-//            [pomelo requestWithRoute:@"gate.gateHandler.queryEntry" andParams:params andCallback:^(NSDictionary *result){
+    if (([name length] > 0) && ([channel length] > 0)) {
+        [self.activityIndicatorView startAnimating];
+        [pomelo connectToHost:@"51.254.135.101" onPort:3010 withCallback:^(Pomelo *p){
+            NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                    name, @"username",
+                                    channel, @"rid",
+                                    nil];
+            [p requestWithRoute:@"connector.entryHandler.enter" andParams:params andCallback:^(NSDictionary *result)
+             {
+             
+             }];
+//           // NSDictionary *params = [NSDictionary dictionaryWithObject:name forKey:@"uid"];
+//            NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+//                                    host, @"51.254.135.101",
+//                                    port, @"3010",
+//                                    name, @"uid", nil];
+//          [pomelo requestWithRoute:@"connector.entryHandler.enter" andParams:params andCallback:^(NSDictionary *result){
 //                [pomelo disconnectWithCallback:^(Pomelo *p){
-//                    [self entryWithData:result];
+//                    //[self entryWithData:result];
 //                }];
-//            }];
-//        }];
-//    }
+            }];
+        
+      //  }];
+    }
     //[self.navigationController pushViewController:self.contactsViewController animated:YES];
 }
 
@@ -72,7 +87,7 @@
                                 channel, @"rid",
                                 nil];
         [p requestWithRoute:@"connector.entryHandler.enter" andParams:params andCallback:^(NSDictionary *result){
-            NSArray *userList = [result objectForKey:@"users"];
+//            NSArray *userList = [result objectForKey:@"users"];
 //            [self.contactsViewController.contactList addObjectsFromArray:userList];
 //            [self.contactsViewController.contactList removeObject:name];
 //            [self.activityIndicatorView stopAnimating];

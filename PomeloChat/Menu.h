@@ -10,8 +10,6 @@
 #import "Pomelo.h"
 
 @interface ChatViewControllerX : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *chatTextField;
-@property (weak, nonatomic) IBOutlet UITextField *inputTextField;
 @property (weak, nonatomic) NSString *target;
 
 @property (weak, nonatomic) Pomelo *pomelo;
