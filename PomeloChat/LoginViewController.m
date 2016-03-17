@@ -37,15 +37,7 @@
     NSString *channel = @"chat";
     NSString *host = @"51.254.135.101";
     NSString *port = @"3010";
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ChatViewControllerX *root = [[ChatViewControllerX alloc] initWithNibName:@"Menu" bundle:nil];
-    self.navController = [[UINavigationController alloc] initWithRootViewController:root];
-    [self.window addSubview:navController.view];
     
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    self.window.rootViewController = root;
-
     if (([name length] > 0) && ([channel length] > 0)) {
         [self.activityIndicatorView startAnimating];
         [pomelo connectToHost:@"51.254.135.101" onPort:3010 withCallback:^(Pomelo *p){
@@ -70,7 +62,16 @@
         
       //  }];
     }
-    //[self.navigationController pushViewController:self.contactsViewController animated:YES];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ChatViewController *root = [[ChatViewController alloc] initWithNibName:@"ChatViewController" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:root];
+    [self.window addSubview:navController.view];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = root;
+
+    //[self.navigationController pushViewController:self.Menu animated:YES];
 }
 
 - (void)entryWithData:(NSDictionary *)data

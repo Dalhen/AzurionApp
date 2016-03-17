@@ -36,13 +36,19 @@
 
 - (IBAction)send:(id)sender
 {
+    NSString *name = @"iosTEST";
+    NSString *channel = @"chat";
+self.target = @"*";
     NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:
                           inputTextField.text, @"content",
-                          self.target, @"target",
+                          self.target, @"*",
+                          name, @"username",
+                          channel, @"rid",
                           nil];
     
     if ([self.target isEqualToString:@"*"]) {
         [pomelo notifyWithRoute:@"chat.chatHandler.send" andParams:data];
+        printf("pass");
     } else {
         [pomelo requestWithRoute:@"chat.chatHandler.send" andParams:data andCallback:^(NSDictionary *result){
             [chatStr appendFormat:@"you says to %@: %@\n", self.target, [data objectForKey:@"content"]];
@@ -84,8 +90,6 @@
     [super viewDidLoad];
     [self initEvents];
     // Do any additional setup after loading the view from its nib.
-    self.viewController = ({ EFAnimationViewController *viewController = [[EFAnimationViewController alloc] init]; [self.view addSubview:viewController.view]; [self addChildViewController:viewController];
-        [viewController didMoveToParentViewController:self]; viewController; });
  }
 
 
